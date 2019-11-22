@@ -1,0 +1,23 @@
+section .data
+format:	db	"%f", 10, 0
+pi	dq	3.14
+raio	dq	5.0
+cnst	dq	2.0
+
+section .text
+	global main
+	extern printf
+	main:
+	push	rbp
+	mov	rbp, rsp
+
+	mov	rax, 3
+	mov	
+	; printf
+	mov	rdi, format
+	mov	rsi, rbx
+	mov	rax, 0
+	call	printf
+
+	mov	rax, 0
+	ret
